@@ -5,14 +5,6 @@ host = "shell.angstromctf.com"
 port = 1235
 
 libc = CDLL("libc.so.6")
-a=libc.time(0)
-libc.srand(1)
-print a
-
-a1 = libc.rand()
-print a1
-a2 = libc.rand()
-print a2
 
 def recv():
 	global s
