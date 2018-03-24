@@ -35,11 +35,19 @@ def flag():
 	libc.srand(a)
 
 	a1 = libc.rand()%1000000
-	print a1
+	# print a1
 	a2 = libc.rand()%1000000
-	print a2
+	# print a2
 	a3=a1+a2
+	print "ketqua: ", a3
 	n1 = recv()
+	for i in range(-10,10):
+		temp = libc.time(0)+i
+		libc.srand(temp)
+		a5 = libc.rand()%1000000
+		# print a1
+		a6 = libc.rand()%1000000
+		print "time: ", i ,": ", a5+a6		
 	# print n1
 	send(a3)
 	# print resault
